@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6851b459-f4a5-4988-81d9-bbbfee52dd5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/CreateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/CreateDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dto/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dto/BoardDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/DeleteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/DeleteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/ReadDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/ReadDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/UpdateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/UpdateDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +172,7 @@
       <updated>1576626065476</updated>
       <workItem from="1576626070971" duration="17620000" />
       <workItem from="1576711245717" duration="310000" />
-      <workItem from="1576711639389" duration="874000" />
+      <workItem from="1576711639389" duration="910000" />
     </task>
     <task id="LOCAL-00001" summary="20191218-최초커밋">
       <created>1576629858736</created>
@@ -257,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576712315402</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="dto class 작성">
+      <created>1576712538075</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576712538075</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +278,8 @@
     <MESSAGE value="필요파일 추가" />
     <MESSAGE value="namespace 경로 추가 및 리펙토링" />
     <MESSAGE value="리팩토링" />
-    <option name="LAST_COMMIT_MESSAGE" value="리팩토링" />
+    <MESSAGE value="dto class 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="dto class 작성" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576628681984">
@@ -290,10 +299,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576711546704" />
-    <state x="442" y="114" key="CommitChangelistDialog2" timestamp="1576712312667">
+    <state x="442" y="114" key="CommitChangelistDialog2" timestamp="1576712537075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="442" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576712312667" />
+    <state x="442" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576712537075" />
     <state x="2362" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576637813702" />
     <state width="1877" height="163" key="GridCell.Tab.0.bottom" timestamp="1576712148861">
       <screen x="0" y="0" width="1920" height="1040" />
