@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6851b459-f4a5-4988-81d9-bbbfee52dd5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/CreateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/CreateDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/DeleteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/DeleteDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/ReadDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/ReadDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/UpdateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/UpdateDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/service/BoardService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +169,7 @@
       <updated>1576626065476</updated>
       <workItem from="1576626070971" duration="17620000" />
       <workItem from="1576711245717" duration="310000" />
-      <workItem from="1576711639389" duration="910000" />
+      <workItem from="1576711639389" duration="947000" />
     </task>
     <task id="LOCAL-00001" summary="20191218-최초커밋">
       <created>1576629858736</created>
@@ -265,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576712538075</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="인터페이스에 @Mapper 어노테이션 입력">
+      <created>1576712577996</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1576712577996</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +283,8 @@
     <MESSAGE value="namespace 경로 추가 및 리펙토링" />
     <MESSAGE value="리팩토링" />
     <MESSAGE value="dto class 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="dto class 작성" />
+    <MESSAGE value="인터페이스에 @Mapper 어노테이션 입력" />
+    <option name="LAST_COMMIT_MESSAGE" value="인터페이스에 @Mapper 어노테이션 입력" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576628681984">
@@ -299,10 +304,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576711546704" />
-    <state x="442" y="114" key="CommitChangelistDialog2" timestamp="1576712537075">
+    <state x="442" y="114" key="CommitChangelistDialog2" timestamp="1576712576980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="442" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576712537075" />
+    <state x="442" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576712576980" />
     <state x="2362" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576637813702" />
     <state width="1877" height="163" key="GridCell.Tab.0.bottom" timestamp="1576712148861">
       <screen x="0" y="0" width="1920" height="1040" />
