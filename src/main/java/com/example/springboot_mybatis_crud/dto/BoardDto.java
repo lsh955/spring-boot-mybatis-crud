@@ -1,9 +1,12 @@
 package com.example.springboot_mybatis_crud.dto;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author 이승환
  * @since 2019-12-18
  */
+@Component  // @Component는 Bean을 생성 할 때 java에서 new로 생성하듯이 생성한다.
 public class BoardDto {
 
     private Integer id;     // 키값
