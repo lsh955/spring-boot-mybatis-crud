@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6851b459-f4a5-4988-81d9-bbbfee52dd5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dto/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/mapper/create.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/create.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/mapper/delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/delete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/mapper/read.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/read.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/mapper/update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/update.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/create.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/create.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/delete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/delete.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/read.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/read.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/update.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/update.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +177,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576626065476</updated>
-      <workItem from="1576626070971" duration="15859000" />
+      <workItem from="1576626070971" duration="17610000" />
     </task>
     <task id="LOCAL-00001" summary="20191218-최초커밋">
       <created>1576629858736</created>
@@ -252,7 +235,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576637815146</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="리팩토링">
+      <created>1576657909080</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576657909080</updated>
+    </task>
+    <task id="LOCAL-00010" summary="리팩토링">
+      <created>1576658048219</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1576658048219</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +261,8 @@
     <MESSAGE value="name값 변경" />
     <MESSAGE value="필요파일 추가" />
     <MESSAGE value="namespace 경로 추가 및 리펙토링" />
-    <option name="LAST_COMMIT_MESSAGE" value="namespace 경로 추가 및 리펙토링" />
+    <MESSAGE value="리팩토링" />
+    <option name="LAST_COMMIT_MESSAGE" value="리팩토링" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576628681984">
@@ -276,10 +274,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576631643167" />
-    <state x="442" y="114" key="CommitChangelistDialog2" timestamp="1576657907465">
+    <state x="442" y="114" key="CommitChangelistDialog2" timestamp="1576658047311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="442" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576657907465" />
+    <state x="442" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576658047311" />
     <state x="2362" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576637813702" />
     <state width="938" height="278" key="GridCell.Tab.0.bottom" timestamp="1576657927577">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -345,10 +343,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576635915499" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576657910572">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576658049273">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576657910572" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576658049273" />
     <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576637816168" />
     <state x="539" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576635132321">
       <screen x="0" y="0" width="1920" height="1040" />
