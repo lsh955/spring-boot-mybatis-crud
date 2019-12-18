@@ -6,12 +6,12 @@ package com.example.springboot_mybatis_crud.dto;
  */
 public class BoardDto {
 
-    private Integer id;
-    private String name;
-    private String tel;
-    private String age;
-    private String title;
-    private String content;
+    private Integer id;     // 키값
+    private String name;    // 이름
+    private String tel;     // 번호
+    private String age;     // 나이
+    private String title;   // 제목
+    private String content; // 내용
     
     public Integer getId() {
         return id;
@@ -60,4 +60,5 @@ public class BoardDto {
     public void setContent(String content) {
         this.content = content;
     }
+    
 }
