@@ -5,4 +5,7 @@ package com.example.springboot_mybatis_crud.mapper;
  * @since 2019-12-18
  */
 public interface read {
+
+
+
 }
