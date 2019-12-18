@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6851b459-f4a5-4988-81d9-bbbfee52dd5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/CreateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dao/CreateDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dto/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springboot_mybatis_crud/dto/BoardDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +171,7 @@
       <updated>1576626065476</updated>
       <workItem from="1576626070971" duration="17620000" />
       <workItem from="1576711245717" duration="310000" />
-      <workItem from="1576711639389" duration="653000" />
+      <workItem from="1576711639389" duration="874000" />
     </task>
     <task id="LOCAL-00001" summary="20191218-최초커밋">
       <created>1576629858736</created>
@@ -251,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576660067099</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="리팩토링">
+      <created>1576712315402</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1576712315402</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,14 +282,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576631643167" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1576712503875">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576712503875" />
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576711546704">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576711546704" />
-    <state x="442" y="114" key="CommitChangelistDialog2" timestamp="1576660066557">
+    <state x="442" y="114" key="CommitChangelistDialog2" timestamp="1576712312667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="442" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576660066557" />
+    <state x="442" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576712312667" />
     <state x="2362" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576637813702" />
     <state width="1877" height="163" key="GridCell.Tab.0.bottom" timestamp="1576712148861">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -349,10 +359,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576635915499" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576660068206">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576712317663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576660068206" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576712317663" />
     <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576637816168" />
     <state x="539" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576635132321">
       <screen x="0" y="0" width="1920" height="1040" />
