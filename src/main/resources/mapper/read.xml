@@ -4,4 +4,8 @@
 
 <mapper namespace="com.example.springboot_mybatis_crud.dao.ReadDao">
 
+    <select id="getall" resultType="com.example.springboot_mybatis_crud.dto.BoardDto">
+        SELECT ID, NAME, TEL, AGE, TITLE, CONTENT FROM BOARD
+    </select>
+
 </mapper>

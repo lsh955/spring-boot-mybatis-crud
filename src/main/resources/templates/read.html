@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
 
@@ -25,15 +25,15 @@
                 <th>번호</th>
                 <th>게시글 제목</th>
                 <th>작성자</th>
-                <th>작성시간</th>
+                <th>전화번호</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-                <th scope='row'></th>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td th:text="${list.id}">id</td>
+                <td th:text="${list.title}">title</td>
+                <td th:text="${list.name}">regid</td>
+                <td th:text="${list.tel}">tel</td>
             </tr>
             <tr>
                 <td colspan=4 align=center>
