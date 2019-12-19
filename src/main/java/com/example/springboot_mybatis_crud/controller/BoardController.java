@@ -12,7 +12,7 @@ public class BoardController {
 
     @GetMapping("/")
     public String home() {
-        return "index";
+        return "read";
     }
 
 }
