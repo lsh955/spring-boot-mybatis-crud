@@ -2,25 +2,27 @@ package com.example.springboot_mybatis_crud.dto;
 
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
+
 /**
  * @author 이승환
  * @since 2019-12-18
  */
 @Component  // @Component는 Bean을 생성 할 때 java에서 new로 생성하듯이 생성한다.
-public class BoardDto {
+public class BoardDto implements Serializable {
 
-    private Integer id;     // 키값
+    private int id;         // 키값
     private String name;    // 이름
     private String tel;     // 번호
     private String age;     // 나이
     private String title;   // 제목
     private String content; // 내용
     
-    public Integer getId() {
+    public int getId() {
         return id;
     }
     
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
     
@@ -49,6 +51,9 @@ public class BoardDto {
     }
     
     public String getTitle() {
+        
+        System.out.println("타 타이틀" + title);
+        
         return title;
     }
     

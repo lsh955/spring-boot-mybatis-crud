@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.springboot_mybatis_crud.mapper.BoardMapper">
+
+    <select id="selectBoardListCnt" parameterType="com.example.springboot_mybatis_crud.dto.BoardDto" resultType="int">
+        SELECT COUNT(*) AS TOTCNT FROM BOARD
+    </select>
+
+    <select id="selectBoardList" parameterType="com.example.springboot_mybatis_crud.dto.BoardDto" resultType="com.example.springboot_mybatis_crud.dto.BoardDto">
+        SELECT ID, ID, NAME, TEL, AGE, TITLE, CONTENT FROM BOARD
+    </select>
+
+</mapper>

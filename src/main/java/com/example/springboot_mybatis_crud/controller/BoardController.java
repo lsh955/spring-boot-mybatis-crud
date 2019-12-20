@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -20,14 +21,23 @@ public class BoardController {
     private BoardService boardService;
     
     @GetMapping("/")
-    public ModelAndView home() throws Exception {
-        ModelAndView modelAndView = new ModelAndView();
-        
-        List<BoardDto> list = boardService.getall();
-        modelAndView.addObject("list", list);
+    public ModelAndView notice(HttpServletRequest request, BoardDto boardDto) throws Exception {
+        ModelAndView mv = new ModelAndView();
     
-        modelAndView.setViewName("read");
-        return modelAndView;
+        // 목록 갯수
+        int totalCnt = this.boardService.selectBoardListCnt(request, boardDto);
+    
+        // 목록
+        List<BoardDto> list = null;
+        if(totalCnt > 0){
+            list = this.boardService.selectBoardList(request, boardDto);
+        }
+    
+        mv.addObject("totalCnt", totalCnt);
+        mv.addObject("list", list);
+        mv.addObject("boardDto", boardDto);
+        mv.setViewName("read");
+        return mv;
     }
 
 }

@@ -28,19 +28,17 @@
                 <th>전화번호</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <td th:text="${list.id}">id</td>
-                <td th:text="${list.title}">title</td>
-                <td th:text="${list.name}">regid</td>
-                <td th:text="${list.tel}">tel</td>
-            </tr>
-            <tr>
-                <td colspan=4 align=center>
-                    <a href=""></a>
-                </td>
-            </tr>
-            </tbody>
+        <tbody>
+        <tr th:if="${totalCnt} > 0" th:each="list : ${list}">
+            <td th:text="${list.id}">id</td>
+            <td th:text="${list.title}">title</td>
+            <td th:text="${list.content}">content</td>
+            <td th:text="${list.name}">name</td>
+        </tr>
+        <tr th:unless="${totalCnt} > '0'">
+            <td colspan="4">게시물 없음</td>
+        </tr>
+        </tbody>
         </table>
     </div>
 </div>
