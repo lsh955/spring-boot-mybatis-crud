@@ -9,7 +9,7 @@
     </select>
 
     <select id="selectBoardList" parameterType="com.example.springboot_mybatis_crud.dto.BoardDto" resultType="com.example.springboot_mybatis_crud.dto.BoardDto">
-        SELECT ID, ID, NAME, TEL, AGE, TITLE, CONTENT FROM BOARD
+        SELECT ID, NAME, TEL, AGE, TITLE, CONTENT FROM BOARD
     </select>
 
 </mapper>
