@@ -11,8 +11,8 @@ import java.util.List;
  */
 public interface BoardService {
     
-    int selectBoardListCnt(HttpServletRequest request, BoardDto boardDto) throws Exception;
+    int selectBoardListCnt(HttpServletRequest request, BoardDto boardDto);
     
-    List<BoardDto> selectBoardList(HttpServletRequest request, BoardDto boardDto) throws Exception;
+    List<BoardDto> selectBoardList(HttpServletRequest request, BoardDto boardDto);
     
 }

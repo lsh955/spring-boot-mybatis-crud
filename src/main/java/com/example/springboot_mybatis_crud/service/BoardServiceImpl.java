@@ -18,11 +18,11 @@ public class BoardServiceImpl implements BoardService {
     @Autowired
     private BoardMapper boardMapper;
     
-    public int selectBoardListCnt(HttpServletRequest request, BoardDto boardDto) throws Exception {
+    public int selectBoardListCnt(HttpServletRequest request, BoardDto boardDto) {
         return boardMapper.selectBoardListCnt();
     }
     
-    public List<BoardDto> selectBoardList(HttpServletRequest request, BoardDto boardDto) throws Exception {
+    public List<BoardDto> selectBoardList(HttpServletRequest request, BoardDto boardDto) {
         return boardMapper.selectBoardList();
     }
     

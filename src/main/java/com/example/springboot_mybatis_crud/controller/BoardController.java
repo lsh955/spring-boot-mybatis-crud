@@ -21,7 +21,7 @@ public class BoardController {
     private BoardService boardService;
     
     @GetMapping("/")
-    public ModelAndView notice(HttpServletRequest request, BoardDto boardDto) throws Exception {
+    public ModelAndView notice(HttpServletRequest request, BoardDto boardDto) {
         ModelAndView mv = new ModelAndView();
     
         // 목록 갯수

@@ -14,8 +14,8 @@ import java.util.List;
 @Mapper
 public interface BoardMapper {
     
-    int selectBoardListCnt() throws Exception;
+    int selectBoardListCnt();
     
-    List<BoardDto> selectBoardList() throws Exception;
+    List<BoardDto> selectBoardList();
 
 }
