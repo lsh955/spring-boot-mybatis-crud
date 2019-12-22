@@ -51,9 +51,6 @@ public class BoardDto implements Serializable {
     }
     
     public String getTitle() {
-        
-        System.out.println("타 타이틀" + title);
-        
         return title;
     }
     
