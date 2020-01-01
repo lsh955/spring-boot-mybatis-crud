@@ -11,8 +11,8 @@ import java.util.List;
  */
 public interface BoardService {
     
-    int selectBoardListCnt(HttpServletRequest request, BoardDto boardDto);
+    int selectBoardListCnt(BoardDto boardDto);
     
-    List<BoardDto> selectBoardList(HttpServletRequest request, BoardDto boardDto);
+    List<BoardDto> selectBoardList(BoardDto boardDto);
     
 }
