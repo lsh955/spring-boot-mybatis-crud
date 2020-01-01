@@ -20,7 +20,7 @@ public class BoardController {
     private BoardService boardService;
     
     @GetMapping("/")
-    public ModelAndView notice(BoardDto boardDto) {
+    public ModelAndView read(BoardDto boardDto) {
         ModelAndView mv = new ModelAndView();
     
         // 목록 갯수
