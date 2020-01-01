@@ -2,7 +2,6 @@ package com.example.springboot_mybatis_crud.service;
 
 import com.example.springboot_mybatis_crud.dto.BoardDto;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
