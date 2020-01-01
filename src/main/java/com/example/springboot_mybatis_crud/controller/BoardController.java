@@ -21,16 +21,16 @@ public class BoardController {
     private BoardService boardService;
     
     @GetMapping("/")
-    public ModelAndView notice(HttpServletRequest request, BoardDto boardDto) {
+    public ModelAndView notice(BoardDto boardDto) {
         ModelAndView mv = new ModelAndView();
     
         // 목록 갯수
-        int totalCnt = this.boardService.selectBoardListCnt(request, boardDto);
+        int totalCnt = this.boardService.selectBoardListCnt(boardDto);
     
         // 목록
         List<BoardDto> list = null;
         if(totalCnt > 0){
-            list = this.boardService.selectBoardList(request, boardDto);
+            list = this.boardService.selectBoardList(boardDto);
         }
     
         mv.addObject("totalCnt", totalCnt);

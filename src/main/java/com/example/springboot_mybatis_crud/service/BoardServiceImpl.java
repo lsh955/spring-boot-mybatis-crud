@@ -4,8 +4,6 @@ import com.example.springboot_mybatis_crud.dto.BoardDto;
 import com.example.springboot_mybatis_crud.mapper.BoardMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
