@@ -23,7 +23,7 @@ public class BoardController {
     @GetMapping("/create")
     public ModelAndView create(BoardDto boardDto) { // Create(생성)
         ModelAndView mv = new ModelAndView();
-        
+        // 작업중...
         return mv;
     }
     
@@ -49,13 +49,16 @@ public class BoardController {
     @GetMapping("/update")
     public ModelAndView update(BoardDto boardDto) { // Update(갱신)
         ModelAndView mv = new ModelAndView();
-        
+        // 작업중...
         return mv;
     }
     
     @GetMapping("/delete/{id}")
-    public int delete(@PathVariable int id) { // Delete(삭제)
-        return boardServiceImpl.delete(id);
+    public ModelAndView delete(@PathVariable int id) { // Delete(삭제)
+        ModelAndView mv = new ModelAndView();
+        mv.addObject(boardServiceImpl.delete(id));
+        mv.setViewName("read");
+        return mv;
     }
     
 }
