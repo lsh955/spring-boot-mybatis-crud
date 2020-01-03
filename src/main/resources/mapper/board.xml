@@ -4,12 +4,21 @@
 
 <mapper namespace="com.example.springboot_mybatis_crud.mapper.BoardMapper">
 
-    <select id="selectBoardListCnt" parameterType="com.example.springboot_mybatis_crud.dto.BoardDto" resultType="int">
-        SELECT COUNT(*) AS TOTCNT FROM BOARD
+    <select id="selectCnt" parameterType="com.example.springboot_mybatis_crud.dto.BoardDto" resultType="int">
+        SELECT COUNT(*) AS TOTCNT
+        FROM BOARD
     </select>
 
-    <select id="selectBoardList" parameterType="com.example.springboot_mybatis_crud.dto.BoardDto" resultType="com.example.springboot_mybatis_crud.dto.BoardDto">
-        SELECT ID, NAME, TEL, AGE, TITLE, CONTENT FROM BOARD
+    <select id="select" parameterType="com.example.springboot_mybatis_crud.dto.BoardDto"
+            resultType="com.example.springboot_mybatis_crud.dto.BoardDto">
+        SELECT ID, NAME, TEL, AGE, TITLE, CONTENT
+        FROM BOARD
     </select>
+
+    <delete id="delete" parameterType="com.example.springboot_mybatis_crud.dto.BoardDto">
+        DELETE
+        FROM BOARD
+        WHERE ID = #{Id}
+    </delete>
 
 </mapper>

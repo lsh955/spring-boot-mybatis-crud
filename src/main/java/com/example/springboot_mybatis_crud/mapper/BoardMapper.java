@@ -10,12 +10,14 @@ import java.util.List;
  * @author 이승환
  * @since 2019-12-18
  */
-@Component
 @Mapper
+@Component
 public interface BoardMapper {
     
-    int selectBoardListCnt();
+    int selectCnt();            // 조회(카운트)
     
-    List<BoardDto> selectBoardList();
-
+    int delete(int id);         // 삭제
+    
+    List<BoardDto> select();    // 조회
+    
 }

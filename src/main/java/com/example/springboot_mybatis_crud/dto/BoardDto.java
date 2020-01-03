@@ -10,7 +10,7 @@ import java.io.Serializable;
  */
 @Component  // @Component는 Bean을 생성 할 때 java에서 new로 생성하듯이 생성한다.
 public class BoardDto implements Serializable {
-
+    
     private int id;         // 키값
     private String name;    // 이름
     private String tel;     // 번호

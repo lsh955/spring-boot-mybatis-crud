@@ -10,8 +10,10 @@ import java.util.List;
  */
 public interface BoardService {
     
-    int selectBoardListCnt(BoardDto boardDto);
+    int selectCnt(BoardDto boardDto);
     
-    List<BoardDto> selectBoardList(BoardDto boardDto);
+    int delete(int id);
+    
+    List<BoardDto> select(BoardDto boardDto);
     
 }
