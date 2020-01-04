@@ -31,11 +31,12 @@ public class BoardController {
     @GetMapping("/")
     public String read(Model model, BoardDto boardDto) {   // Read(읽기)
 
-        int select_count = boardServiceImpl.selectcount(boardDto);         // 리스트 카운트
-        List<BoardDto> select_list = boardServiceImpl.select(boardDto);    // 리스트
+        int select_count = boardServiceImpl.selectcount(boardDto);
+        List<BoardDto> select_list = boardServiceImpl.select(boardDto);
 
-        model.addAttribute("select_count", select_count);
-        model.addAttribute("select_list", select_list);
+        model.addAttribute("select_count", select_count);   // 리스트 카운트
+        model.addAttribute("select_list", select_list);     // 리스트
+
         return "read";
     }
 
