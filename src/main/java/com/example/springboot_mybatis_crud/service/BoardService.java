@@ -9,11 +9,11 @@ import java.util.List;
  * @since 2019-12-18
  */
 public interface BoardService {
-    
+
     int selectCnt(BoardDto boardDto);
-    
+
     int delete(int id);
-    
+
     List<BoardDto> select(BoardDto boardDto);
-    
+
 }

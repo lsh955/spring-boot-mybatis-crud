@@ -13,11 +13,11 @@ import java.util.List;
 @Mapper
 @Component
 public interface BoardMapper {
-    
+
     int selectCnt();            // 조회(카운트)
-    
+
     int delete(int id);         // 삭제
-    
+
     List<BoardDto> select();    // 조회
-    
+
 }

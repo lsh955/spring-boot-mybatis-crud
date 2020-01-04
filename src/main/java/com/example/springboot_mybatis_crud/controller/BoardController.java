@@ -16,47 +16,47 @@ import java.util.List;
  */
 @Controller
 public class BoardController {
-    
+
     @Autowired
     private BoardServiceImpl boardServiceImpl;
-    
+
     @GetMapping("/create")
     public ModelAndView create(BoardDto boardDto) { // Create(생성)
         ModelAndView mv = new ModelAndView();
         // 작업중...
         return mv;
     }
-    
+
     @GetMapping("/")
     public ModelAndView read(BoardDto boardDto) {   // Read(읽기)
         ModelAndView mv = new ModelAndView();
-        
+
         // 목록 갯수
         int totalCnt = this.boardServiceImpl.selectCnt(boardDto);
-        
+
         // 목록
         List<BoardDto> list = null;
         if (totalCnt > 0) {
             list = this.boardServiceImpl.select(boardDto);
         }
-        
+
         mv.addObject("totalCnt", totalCnt);
         mv.addObject("list", list);
         mv.setViewName("read");
         return mv;
     }
-    
+
     @GetMapping("/update")
     public ModelAndView update(BoardDto boardDto) { // Update(갱신)
         ModelAndView mv = new ModelAndView();
         // 작업중...
         return mv;
     }
-    
+
     @GetMapping("/delete/{id}")
     public String delete(@PathVariable int id) { // Delete(삭제)
         boardServiceImpl.delete(id);
         return "read";
     }
-    
+
 }
