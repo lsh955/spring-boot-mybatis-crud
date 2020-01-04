@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -22,10 +21,11 @@ public class BoardController {
     private BoardServiceImpl boardServiceImpl;
 
     @GetMapping("/create")
-    public ModelAndView create(BoardDto boardDto) { // Create(생성)
-        ModelAndView mv = new ModelAndView();
+    public String create(Model model, BoardDto boardDto) { // Create(생성)
+
         // 작업중...
-        return mv;
+
+        return "create";
     }
 
     @GetMapping("/")
@@ -41,15 +41,18 @@ public class BoardController {
     }
 
     @GetMapping("/update")
-    public ModelAndView update(BoardDto boardDto) { // Update(갱신)
-        ModelAndView mv = new ModelAndView();
+    public String update(Model model, BoardDto boardDto) { // Update(갱신)
+
         // 작업중...
-        return mv;
+
+        return "update";
     }
 
     @GetMapping("/delete/{id}")
     public String delete(@PathVariable int id) { // Delete(삭제)
+
         boardServiceImpl.delete(id);
+
         return "read";
     }
 
