@@ -14,7 +14,7 @@ import java.util.List;
 @Component
 public interface BoardMapper {
 
-    int selectCnt();            // 조회(카운트)
+    int selectcount();            // 조회(카운트)
 
     int delete(int id);         // 삭제
 

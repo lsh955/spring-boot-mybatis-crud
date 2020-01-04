@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface BoardService {
 
-    int selectCnt(BoardDto boardDto);
+    int selectcount(BoardDto boardDto);
 
     int delete(int id);
 

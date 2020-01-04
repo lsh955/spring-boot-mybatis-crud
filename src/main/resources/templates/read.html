@@ -15,7 +15,7 @@
         <a class="navbar-brand" href="#">게시판</a>
     </div>
 </nav>
-<form th:action="@{'/delete/' + ${id}}" method="post">
+<form th:action="@{'/delete/'+${id}}" method="post">
     <!--스크립트로 라디오버튼 클릭시 hidden값 value로 넣어야 되는데 귀찮다. 어찌됬든 delete 기능은 된다.-->
     <input type="hidden" name="id" id="delete_list" value=""/>
     <div class="jumbotron">
@@ -30,7 +30,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:if="${total_Cnt} > 0" th:each="select_list : ${select_list}">
+                <tr th:if="${select_count} > 0" th:each="select_list : ${select_list}">
                     <td>
                         <input type="radio" name="id" th:value="${select_list.id}">
                     </td>
@@ -38,7 +38,7 @@
                     <td th:text="${select_list.title}">title</td>
                     <td th:text="${select_list.name}">name</td>
                 </tr>
-                <tr th:unless="${total_Cnt} > '0'">
+                <tr th:unless="${select_count} > '0'">
                     <td colspan="4">게시물 없음</td>
                 </tr>
                 </tbody>

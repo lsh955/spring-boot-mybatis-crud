@@ -4,7 +4,7 @@
 
 <mapper namespace="com.example.springboot_mybatis_crud.mapper.BoardMapper">
 
-    <select id="selectCnt" parameterType="com.example.springboot_mybatis_crud.dto.BoardDto" resultType="int">
+    <select id="selectcount" parameterType="com.example.springboot_mybatis_crud.dto.BoardDto" resultType="int">
         SELECT COUNT(*) AS TOTCNT
         FROM BOARD
     </select>
