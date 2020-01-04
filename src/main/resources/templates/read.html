@@ -25,9 +25,8 @@
                 <tr>
                     <th style="text-align: center;">선택</th>
                     <th style="text-align: center;">번호</th>
-                    <th style="text-align: center;">작성자</th>
                     <th style="text-align: center;">게시글 제목</th>
-                    <th style="text-align: center;">내용</th>
+                    <th style="text-align: center;">작성자</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -36,9 +35,8 @@
                         <input type="radio" name="id" th:value="${list.id}">
                     </td>
                     <td th:text="${list.id}">id</td>
-                    <td th:text="${list.name}">name</td>
                     <td th:text="${list.title}">title</td>
-                    <td th:text="${list.content}">content</td>
+                    <td th:text="${list.name}">name</td>
                 </tr>
                 <tr th:unless="${totalCnt} > '0'">
                     <td colspan="4">게시물 없음</td>
