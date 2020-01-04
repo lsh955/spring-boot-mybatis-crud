@@ -18,11 +18,6 @@ public class BoardServiceImpl implements BoardService {
     private BoardMapper boardMapper;
 
     @Override
-    public int selectcount(BoardDto boardDto) {  // 목록개수 카운트
-        return boardMapper.selectcount();
-    }
-
-    @Override
     public List<BoardDto> select(BoardDto boardDto) {  // 리스트 조회
 
         int totalCnt = boardMapper.selectcount();
@@ -33,6 +28,11 @@ public class BoardServiceImpl implements BoardService {
         }
 
         return select_list;
+    }
+
+    @Override
+    public int selectcount(BoardDto boardDto) {  // 리스트 카운트(리스트 부가기능)
+        return boardMapper.selectcount();
     }
 
     @Override
