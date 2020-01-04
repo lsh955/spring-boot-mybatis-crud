@@ -54,11 +54,9 @@ public class BoardController {
     }
     
     @GetMapping("/delete/{id}")
-    public ModelAndView delete(@PathVariable int id) { // Delete(삭제)
-        ModelAndView mv = new ModelAndView();
-        mv.addObject(boardServiceImpl.delete(id));
-        mv.setViewName("read");
-        return mv;
+    public String delete(@PathVariable int id) { // Delete(삭제)
+        boardServiceImpl.delete(id);
+        return "read";
     }
     
 }
