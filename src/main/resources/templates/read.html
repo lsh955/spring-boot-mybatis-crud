@@ -30,15 +30,15 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:if="${totalCnt} > 0" th:each="list : ${list}">
+                <tr th:if="${total_Cnt} > 0" th:each="select_list : ${select_list}">
                     <td>
-                        <input type="radio" name="id" th:value="${list.id}">
+                        <input type="radio" name="id" th:value="${select_list.id}">
                     </td>
-                    <td th:text="${list.id}">id</td>
-                    <td th:text="${list.title}">title</td>
-                    <td th:text="${list.name}">name</td>
+                    <td th:text="${select_list.id}">id</td>
+                    <td th:text="${select_list.title}">title</td>
+                    <td th:text="${select_list.name}">name</td>
                 </tr>
-                <tr th:unless="${totalCnt} > '0'">
+                <tr th:unless="${total_Cnt} > '0'">
                     <td colspan="4">게시물 없음</td>
                 </tr>
                 </tbody>

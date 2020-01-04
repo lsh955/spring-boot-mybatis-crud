@@ -4,6 +4,7 @@ import com.example.springboot_mybatis_crud.dto.BoardDto;
 import com.example.springboot_mybatis_crud.service.BoardServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
@@ -28,22 +29,14 @@ public class BoardController {
     }
 
     @GetMapping("/")
-    public ModelAndView read(BoardDto boardDto) {   // Read(읽기)
-        ModelAndView mv = new ModelAndView();
+    public String read(Model model, BoardDto boardDto) {   // Read(읽기)
 
-        // 목록 갯수
-        int totalCnt = this.boardServiceImpl.selectCnt(boardDto);
+        int total_Cnt = this.boardServiceImpl.selectCnt(boardDto);              // 리스트 카운트
+        List<BoardDto> select_list = this.boardServiceImpl.select(boardDto);    // 리스트
 
-        // 목록
-        List<BoardDto> list = null;
-        if (totalCnt > 0) {
-            list = this.boardServiceImpl.select(boardDto);
-        }
-
-        mv.addObject("totalCnt", totalCnt);
-        mv.addObject("list", list);
-        mv.setViewName("read");
-        return mv;
+        model.addAttribute("total_Cnt", total_Cnt);
+        model.addAttribute("select_list", select_list);
+        return "read";
     }
 
     @GetMapping("/update")

@@ -24,7 +24,15 @@ public class BoardServiceImpl implements BoardService {
 
     @Override
     public List<BoardDto> select(BoardDto boardDto) {  // 리스트 조회
-        return boardMapper.select();
+
+        int totalCnt = this.boardMapper.selectCnt();
+
+        List<BoardDto> select_list = null;
+        if (totalCnt > 0) {
+            select_list = this.boardMapper.select();
+        }
+
+        return select_list;
     }
 
     @Override
